@@ -19,6 +19,7 @@ pipeline {
       steps {
         echo 'Packaging....'
         sh 'mvn install -DskipTests'
+        archiveArtifacts(artifacts: '**/traget/*.jar', allowEmptyArchive: true, defaultExcludes: true, caseSensitive: true, fingerprint: true, followSymlinks: true, onlyIfSuccessful: true)
       }
     }
 
