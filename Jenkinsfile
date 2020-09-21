@@ -25,6 +25,6 @@ pipeline {
 
   }
   tools {
-    maven 'Maven 3.6.3'
+    maven 'Apache Maven 3.6.3'
   }
 }
